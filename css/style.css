@@ -1,0 +1,232 @@
+body {
+  background: radial-gradient(#A2A09D, #302E2D);
+}
+
+.screen {
+  position: relative;
+  width: 290px;
+  height: 480px;
+  background: #a0a0a0;
+  border-radius: 4px;
+  background-image: url(https://s24.postimg.org/8r0kzlfjp/rsz_piano2.jpg);
+}
+
+.phone {
+  position: fixed;
+  width: 290px;
+  height: 21px;
+  position: absolute;
+  z-index: 9999;
+  background: /*#4d4d63*/ left center repeat-x scroll;
+}
+.phone ul {
+  list-style-type: none;
+  margin: 4px 5px 0 5px;
+  padding: 0;
+  overflow: hidden;
+  font-family: Arial;
+  font-size: 10px;
+}
+.phone li {
+  float: left;
+  padding: 1px;
+}
+
+
+
+/*Testing Here and Stuff*/
+
+
+.left-nav {
+  height: 410px;
+  width: 140px;
+  position: fixed;
+  left: 0;
+  background-color: #DB3B53;
+  overflow-x: hidden;
+  transition: 0.5s;
+  padding-top: 70px;
+  position: absolute;
+  -webkit-box-shadow: inset 6px 0px 30px -7px rgba(0,0,0,0.75), inset -6px 0px 30px -7px rgba(0,0,0,0.75);
+  -moz-box-shadow: inset 6px 0px 30px -7px rgba(0,0,0,0.75), inset -6px 0px 30px -7px rgba(0,0,0,0.75);
+  box-shadow: inset 6px 0px 30px -7px rgba(0,0,0,0.75), inset -6px 0px 30px -7px rgba(0,0,0,0.75);
+}
+
+
+.left-nav a {
+  padding: 8px 8px 8px 5px;
+  text-decoration: none;
+  font-size: 20px;
+  color: #818181;
+  display: block;
+  transition: 0.3s;
+}
+
+.left-nav a:hover, .offcanvas a:focus{
+    color: #f1f1f1;
+}
+
+.left-nav .closebtn {
+  position: absolute;
+  top: 12px;
+  right: 17px;
+  font-size: 36px;
+  margin-left: 20px;
+  color: #fff;
+}
+
+#main {
+  transition: margin-left .5s;
+  padding: 28px 0 0 18px;
+}
+.left-nav p {
+  font-family: arial;
+  font-size: 8px;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  margin-top: 2px;
+}
+
+/*@media screen and (max-height: 450px) {
+  .left-nav {padding-top: 15px;}
+  .left-nav a {font-size: 18px;}
+}*/
+
+.record {
+  padding: 22px 35px 0 0;
+}
+/*.record img{ 
+    animation:4.5s rotateRight infinite linear; 
+}
+@keyframes rotateRight{
+    0%{ transform:rotate(0deg); transform-origin:50% 50%; }
+    100%{ transform:rotate(360deg); }
+}*/
+/*img {
+  -webkit-transition: -webkit-transform 7s ease-in-out;
+  transition: transform 7s ease-in-out;
+}
+img:hover {
+  -webkit-transform: rotate(720deg);
+  transform: rotate(720deg);
+}*/
+
+img {
+  -webkit-transition: all 0.0s ;
+  -moz-transition: all 0.0s ;
+  -o-transition: all 0.0s ;
+  transition: all 0.0s;
+}
+
+img:hover {
+  -webkit-transform: rotate(2520deg);
+  -moz-transform: rotate(2520deg);
+  transform: rotate(2520deg);
+  -webkit-transition: all 33s ease;
+  -moz-transition: all 33s ease;
+  -o-transition: all 33s ease;
+  transition: all 33s ease;
+}
+
+.functions ul {
+  list-style-type: none;
+  margin: 4px 5px 0 0;
+  padding: 0;
+  overflow: hidden;
+  font-family: Arial;
+}
+.functions li {
+  padding: 1px;
+}
+
+p.song {
+  font-family: arial;
+  font-size: 15px;
+  color: #fff;
+  margin-top: 10px;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+}
+.functions a {
+  color: #ffffff;
+  text-decoration : none;
+  background : transparent;
+}
+p.artist {
+  font-family: arial;
+  font-size: 9px;
+  color: #CCCCCC;
+  margin-top: -15px;
+  text-transform: uppercase;
+  letter-spacing:1px;
+}
+
+.controls ul {
+  list-style-type: none;
+  margin: 4px 38px 0 38px;
+  padding: 0;
+  overflow: hidden;
+  font-family: Arial;
+  font-size: 20px;
+}
+.controls li {
+  float: left;
+  padding: 1px;
+}
+.controls li a {
+  color: #fff;
+}
+.controls li a.pause {
+  color: #DB3B53;
+}
+
+/*Progress Bar*/
+.bar {
+  width: 205px;
+  height: 4px;
+  overflow: hidden;
+  border-radius: 50px;
+  margin: 22px 0 0 0;
+  background: rgba(0, 0, 0, 0.75);
+}
+.seeker {
+  float: left;
+  width: 80px;
+  height: 7px;
+  border: 10px solid #DB3B53;
+}
+a[href="#seek"]
+{
+  display: block;
+  width: 13px;
+  height: 13px;
+  margin: -9px 0 0 0;
+  background: #DB3B53;
+  border-radius: 100%;
+  transition: none;
+}
+
+.current {
+  font-family: arial;
+  color: #fff;
+  float: left;
+  margin: -13px 0 0 12px;
+  font-size: 12px;
+}
+.duration {
+  font-family: arial;
+  color: #fff;
+  float: right;
+  margin: -13px 12px 0 0;
+  font-size: 12px;
+}
+
+.credits {
+  font-size:8px;
+  text-align:right;
+  width:290px;
+  font-family:arial;
+  text-transform:uppercase;
+  letter-spacing:3px;
+  color:#bdbdbd;
+}
